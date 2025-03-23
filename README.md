@@ -106,7 +106,6 @@ A Web Component to show (world) clocks, based on timezone.
 ## folder structure
 
 <!-- readme-tree start -->
-
 ```
 .
 ├── .github
@@ -129,16 +128,23 @@ A Web Component to show (world) clocks, based on timezone.
 │       ├── repo-create_doctoc_md.yml
 │       └── repo-create_tree_readme.yml
 ├── LICENSE
-├── LICENSE_Apache-2
-├── LICENSE_GPL-2
-├── LICENSE_GPL-3
-├── LICENSE_MIT
 ├── README.md
+├── assets
+│   ├── favicon.ico
+│   ├── favicon.svg
+│   ├── img
+│   │   └── rz-clock_bg.jpg
+│   └── js
+│       ├── rz-clock.js
+│       └── rz-dt.js
+├── docs
+│   └── screenshot.png
+├── index.css
+├── index.html
 └── tree.bak
 
-6 directories, 21 files
+10 directories, 25 files
 ```
-
 <!-- readme-tree end -->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
