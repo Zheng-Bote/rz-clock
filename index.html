@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+
+    <title>rz-clock</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <link rel="alternate icon" href="./assets/favicon.ico" />
+    <link href="./index.css" rel="stylesheet" type="text/css" />
+
+    <script type="module" src="./assets/js/rz-clock.js"></script>
+    <script src="./assets/js/rz-dt.js"></script>
+
+    <style>
+      .the_clock {
+        display: flex;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+
+  <body id="body">
+    <div class="container">
+      <div class="nav">
+        <img src="./assets/favicon.svg" />
+        <h1>webcomponent &raquo;rz-clock&laquo;</h1>
+      </div>
+      <div class="content">
+        <h2>Syntax</h2>
+        <code>
+          <pre>
+
+          &lt;rz-clock
+            clock_width="150" 
+            timezone="Asia/Shanghai" 
+            title="Beijing" 
+          rz-clock /&gt;
+        </pre
+          >
+        </code>
+
+        <div class="text">
+          <p>
+            see also:
+            <a
+              href="https://github.com/Zheng-Bote/rz-dt"
+              alt="Github rz-dt"
+              title="Github rz-dt"
+              >&raquo;rz-dt&laquo;</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="sidebar">
+        <h2>Worldclocks</h2>
+        <div class="the_clock">
+          <rz-clock
+            clock_width="150"
+            timezone="Asia/Shanghai"
+            title="Beijing"
+          ></rz-clock>
+          <span class="dt"><rz-dt tz="Asia/Shanghai"></rz-dt></span>
+        </div>
+        <br />
+        <div class="the_clock">
+          <rz-clock
+            clock_width="150"
+            timezone="Europe/Berlin"
+            title="Berlin"
+          ></rz-clock>
+          <span class="dt"
+            ><rz-dt tz="Europe/Berlin" format="de-DE"></rz-dt
+          ></span>
+        </div>
+        <br />
+        <div class="the_clock">
+          <rz-clock
+            clock_width="150"
+            timezone="Africa/Johannesburg"
+            title="Johannesburg"
+          ></rz-clock>
+          <span class="dt"
+            ><rz-dt tz="Africa/Johannesburg" format="en-GB"></rz-dt
+          ></span>
+        </div>
+        <br />
+        <div class="the_clock">
+          <rz-clock
+            clock_width="150"
+            timezone="Europe/Moscow"
+            title="Moscow"
+          ></rz-clock>
+          <span class="dt"
+            ><rz-dt tz="Europe/Moscow" format="ru-RU"></rz-dt
+          ></span>
+        </div>
+        <br />
+      </div>
+    </div>
+  </body>
+</html>
